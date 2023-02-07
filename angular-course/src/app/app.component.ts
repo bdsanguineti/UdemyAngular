@@ -25,4 +25,10 @@ export class AppComponent {
       content: bluePrintData.serverContent
     })
   }
+
+  onChangeFirst(): void {
+    console.log("onServerAdded method");
+    this.serverElements[0].name = 'Changed!';
+  }
+
 }
