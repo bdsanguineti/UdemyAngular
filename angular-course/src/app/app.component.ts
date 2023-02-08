@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent { 
+
+  componentSelected: string = 'recipe';
+
+  onComponentChanged(component: string): void {
+    console.log('oncomponentChange app component', component);
+
+    this.componentSelected = component;
+  }
+
 }
